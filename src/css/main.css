@@ -64,3 +64,45 @@ article {
   background-color: #222222;
   color: #ffffff;
 }
+
+
+
+
+/* delete */
+
+.module-financial-latest .module_link-news .q4icons_icon:before {
+  background-image: url(/files/design/svg/download_icons/bullhorn-regular.svg);
+  filter: invert(32%) sepia(23%) saturate(1364%) hue-rotate(197deg) brightness(94%) contrast(88%);
+}
+
+.module-financial-latest .module_link .module_link-presentation .q4icons_icon:before {
+    background-image: url(/files/design/svg/download_icons/presentation-screen-regular.svg);
+    filter: invert(32%) sepia(23%) saturate(1364%) hue-rotate(197deg) brightness(94%) contrast(88%);
+}
+
+.module-financial-latest .module_link-transcript .q4icons_icon:before {
+  background-image: url(/files/design/svg/download_icons/message-lines-regular.svg);
+  filter: invert(32%) sepia(23%) saturate(1364%) hue-rotate(197deg) brightness(94%) contrast(88%);
+}
+
+.module-financial-latest .module_link-tenq .q4icons_icon:before {
+  background-image: url(/files/design/svg/download_icons/chart-pie-regular.svg);
+  filter: invert(32%) sepia(23%) saturate(1364%) hue-rotate(197deg) brightness(94%) contrast(88%);
+}
+
+.module-financial-latest .module_link-webcast .q4icons_icon:before {
+  background-image: url(/files/design/svg/download_icons/camera-web-regular.svg);
+  filter: invert(32%) sepia(23%) saturate(1364%) hue-rotate(197deg) brightness(94%) contrast(88%);
+}
+
+
+
+.module-financial-latest .module_link-tenq .q4icons_icon:before {
+  background-image: url(/files/design/svg/download_icons/chart-pie-regular.svg) !important;
+  filter: invert(32%) sepia(23%) saturate(1364%) hue-rotate(197deg) brightness(94%) contrast(88%);
+}
+
+.module-financial-latest .module_link-transcript .q4icons_icon:before {
+  background-image: url(/files/design/svg/download_icons/message-lines-regular.svg) !important;
+  filter: invert(32%) sepia(23%) saturate(1364%) hue-rotate(197deg) brightness(94%) contrast(88%);
+}

@@ -27,10 +27,9 @@ var pressReleaseWidget = {
         content.filteredItems = [];
 
         content.items.forEach(function (el, ind, arr) {
-            if(el.tags.includes('earnings')){
-            } else {
+            if((el.tags.includes('earnings')) == false) {
                 content.filteredItems.push(el)
-            }
+            }        
         });
 
         return content;
