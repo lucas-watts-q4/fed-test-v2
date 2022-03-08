@@ -1,4 +1,4 @@
-var prWidget = {
+var pressReleaseWidget = {
     options: {
         containerSelector: '.module-press-release',
         template: (
@@ -23,10 +23,14 @@ var prWidget = {
     },
 
     beforeRenderItems(content){
+
         content.filteredItems = [];
 
         content.items.forEach(function (el, ind, arr) {
-            content.filteredItems.push(el)
+            if(el.tags.includes('earnings')){
+            } else {
+                content.filteredItems.push(el)
+            }
         });
 
         return content;
@@ -41,6 +45,35 @@ var prWidget = {
 
     complete: function() {
         // Add Slick Slider here (https://kenwheeler.github.io/slick/)
+        $('.module-press-release').slick({
+            dots: false,
+            arrows: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  infinite: true,
+                  dots: true,
+                  arrows: true,
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow:1,
+                  slidesToScroll: 1,
+                  dots: true,
+                  arrows: true,
+                }
+              },
+            ]
+          });
     }
 };
 
